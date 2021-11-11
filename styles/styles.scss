@@ -1,17 +1,18 @@
 // Partials //
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 // Variables //
 // Color palette and fonts //
-$primary-color-1: hsl(225, 100%, 94%);
-$primary-color-2: hsl(245, 75%, 52%);
-$neutral-color-1: hsl(225, 100%, 98%); 
-$neutral-color-2: hsl(224, 23%, 55%); 
-$neutral-color-3: hsl(223, 47%, 23%); 
-$neutral-color-4: hsl(0, 0%, 100%); 
+$primary-color-1: hsl(31, 77%, 52%);
+$primary-color-2: hsl(184, 100%, 22%);
+$primary-color-3: hsl(179, 100%, 13%);
+$neutral-color-1: hsla(0, 0%, 100%, 0.75); // Paragraphs //
+$neutral-color-2: hsl(0, 0%, 95%); // Background, headings, buttons //
 $border-color: hsl(260, 12%, 81%);
 
-$primary-font: 'Red Hat Display', sans-serif;
+$primary-font: 'Lexend Deca', sans-serif; // 400 //
+$secondary-font: 'Big Shoulders Display', cursive; // 700//
 
 // Reusable code //
 @mixin flexContainer($direction, $align, $justify) {
@@ -31,8 +32,8 @@ $primary-font: 'Red Hat Display', sans-serif;
 
 body {
     font-family: $primary-font;
-    font-size: 16px;
-    background-color: $primary-color-1;
+    font-size: 15px;
+    background-color: $neutral-color-2;
 }
 
 .attribution { 
