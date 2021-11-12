@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Repository](https://github.com/HiddenOgre28/fem__3cpcc.git)
-- Live Site URL: [Netify]()
+- Live Site URL: [Netify](https://dreamy-hermann-88a82a.netlify.app/)
 
 ## My process
 First, I modified the index.html file and gave the text inside it the structure of three cards wrapped in a container. Then, I styled the card in CSS by using Sass and looking at the designs provided by Frontend Mentor in the design folder, making the container a flex item so every card could change possition depending of the viewport.
