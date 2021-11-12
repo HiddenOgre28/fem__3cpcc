@@ -56,3 +56,125 @@ button {
 }
 
 // Layout //
+.cardContainer {
+    @include flexContainer(column, center, center);
+    width: 85%;
+    margin: 20% auto;
+    color: $neutral-color-1;
+}
+
+.card__1 {
+    background-color: $primary-color-1;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+
+.card__2 {
+    background-color: $primary-color-2;
+}
+
+.card__3 {
+    background-color: $primary-color-3;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.footer {
+    margin: 1% auto;
+}
+
+// Modules //
+.cardContainer__card {
+    padding: 10%;
+    max-width: 286.875px;
+    max-height: 396.563;
+
+    &__img {
+        margin-top: 8%;
+        margin-bottom: 13%;
+    }
+
+    &__title {
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin-bottom: 10%;
+        color: $neutral-color-2;
+    }
+
+    &__p {
+        line-height: 1.7rem;
+        margin-bottom: 10%;
+    }
+
+    &__btn {
+        background-color: $neutral-color-2;
+        padding: 7% 10%;
+        border-radius: 5rem;
+        font-weight: bold;
+        width: 60%;
+
+        &:hover {
+            border: 1px solid $neutral-color-2;
+        }
+    }
+}
+
+// Buttons //
+.btn__1 {
+    color: $primary-color-1;
+
+    &:hover {
+        color: $neutral-color-2;
+        background-color: $primary-color-1;
+    }
+}
+
+.btn__2 {
+    color: $primary-color-2;
+
+    &:hover {
+        color: $neutral-color-2;
+        background-color: $primary-color-2;
+    }
+}
+
+.btn__3 {
+    color: $primary-color-3;
+
+    &:hover {
+        color: $neutral-color-2;
+        background-color: $primary-color-3;
+    }
+}
+
+// Desktop //
+@media screen and (min-device-width: 1024px) {
+    // Layout //
+    .cardContainer {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 70%;
+        margin: 10% auto;
+
+        &__card {
+            padding: 3.8%;
+        }
+    }
+
+    .card__1 {
+        border-top-right-radius: 0;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+    }
+    
+    .card__3 {
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        border-bottom-left-radius: 0;
+    }
+
+    .footer {
+        margin: 0 auto;
+    }
+}
